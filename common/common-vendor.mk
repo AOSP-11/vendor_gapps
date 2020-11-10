@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
     GoogleExtShared \
     GooglePrintRecommendationService \
     DocumentsUIGoogle \
+    GooglePackageInstaller \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Chrome-Stub \

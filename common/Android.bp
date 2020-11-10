@@ -54,6 +54,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "GooglePackageInstaller",
+	owner: "gapps",
+	apk: "proprietary/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	overrides: ["PackageInstaller"],
+}
+
+android_app_import {
 	name: "CalculatorGooglePrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk",
