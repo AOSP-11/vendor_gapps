@@ -25,7 +25,7 @@ android_app_import {
 	apk: "proprietary/app/GoogleExtShared/GoogleExtShared.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	overrides: ["ExtShared"],
 }
@@ -36,7 +36,7 @@ android_app_import {
 	apk: "proprietary/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	overrides: ["PrintRecommendationService"],
 }
@@ -47,7 +47,7 @@ android_app_import {
 	apk: "proprietary/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	overrides: ["DocumentsUI"],
@@ -59,7 +59,7 @@ android_app_import {
 	apk: "proprietary/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	overrides: ["PackageInstaller"],
@@ -71,7 +71,7 @@ android_app_import {
 	apk: "proprietary/product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["ExactCalculator"],
@@ -83,7 +83,7 @@ android_app_import {
 	apk: "proprietary/product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["Calendar", "Etar"],
@@ -107,7 +107,7 @@ android_app_import {
 	apk: "proprietary/product/app/GoogleContacts/GoogleContacts.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["Contacts"],
@@ -119,7 +119,7 @@ android_app_import {
 	apk: "proprietary/product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -130,7 +130,7 @@ android_app_import {
 	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -141,7 +141,7 @@ android_app_import {
 	apk: "proprietary/product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["LatinIME","GooglePinYin"],
@@ -153,7 +153,7 @@ android_app_import {
 	apk: "proprietary/product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -164,7 +164,7 @@ android_app_import {
 	apk: "proprietary/product/app/MarkupGoogle/MarkupGoogle.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -186,7 +186,7 @@ android_app_import {
 	apk: "proprietary/product/app/Ornament/Ornament.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -197,7 +197,7 @@ android_app_import {
 	apk: "proprietary/product/app/Photos/Photos.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["Gallery2", "PhotoTable"],
@@ -220,7 +220,7 @@ android_app_import {
 	apk: "proprietary/product/app/PrebuiltBugle/PrebuiltBugle.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["messaging"],
@@ -232,7 +232,7 @@ android_app_import {
 	apk: "proprietary/product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["DeskClock"],
@@ -244,7 +244,7 @@ android_app_import {
 	apk: "proprietary/product/app/PrebuiltGmail/PrebuiltGmail.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["Email"],
@@ -256,7 +256,7 @@ android_app_import {
 	apk: "proprietary/product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 	overrides: ["SoundPicker"],
@@ -279,7 +279,7 @@ android_app_import {
 	apk: "proprietary/product/app/WallpapersBReel2020a/WallpapersBReel2020a.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -302,7 +302,7 @@ android_app_import {
 	apk: "proprietary/product/app/arcore/arcore.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -313,7 +313,7 @@ android_app_import {
 	apk: "proprietary/product/app/talkback/talkback.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -324,7 +324,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -336,7 +336,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -348,7 +348,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/AndroidMigratePrebuilt/AndroidMigratePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -360,7 +360,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/ConfigUpdater/ConfigUpdater.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -372,7 +372,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/ConnMetrics/ConnMetrics.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -384,7 +384,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -396,7 +396,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/FilesPrebuilt/FilesPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -408,7 +408,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/GoogleDialer/GoogleDialer.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -421,7 +421,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRT5514/HotwordEnrollmentOKGoogleRT5514.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -433,7 +433,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514/HotwordEnrollmentXGoogleRT5514.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -445,7 +445,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/NovaBugreportWrapper/NovaBugreportWrapper.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -457,7 +457,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/OTAConfigPrebuilt/OTAConfigPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -469,7 +469,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -481,7 +481,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -493,7 +493,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -505,7 +505,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -517,7 +517,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -529,7 +529,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/RecorderPrebuilt/RecorderPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -541,7 +541,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -554,7 +554,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/TurboPrebuilt/TurboPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -566,7 +566,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/Velvet/Velvet.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -579,7 +579,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
@@ -591,7 +591,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/CarrierSetup/CarrierSetup.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -603,7 +603,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -615,7 +615,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -627,7 +627,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -639,7 +639,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -652,7 +652,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
@@ -664,7 +664,7 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/WallpaperPickerGooglePrebuilt/WallpaperPickerGooglePrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
