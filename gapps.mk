@@ -60,12 +60,7 @@ PRODUCT_PACKAGES += \
     IconShapeSquircle \
     IconShapeTaperedRect \
     IconShapeTeardrop \
-    IconShapeVessel \
-    NavigationBarMode3Button \
-    NavigationBarModeGestural \
-    NavigationBarModeGesturalExtraWideBack \
-    NavigationBarModeGesturalNarrowBack \
-    NavigationBarModeGesturalWideBack
+    IconShapeVessel
 
 # Permissions
 PRODUCT_COPY_FILES += \
