@@ -66,6 +66,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "TagGoogle",
+	owner: "gapps",
+	apk: "proprietary/priv-app/TagGoogle/TagGoogle.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	overrides: ["Tag"],
+}
+
+android_app_import {
 	name: "CalculatorGooglePrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk",
@@ -99,6 +111,28 @@ android_app_import {
 	},
 	product_specific: true,
 	overrides: ["Browser","Jelly"],
+}
+
+android_app_import {
+	name: "DevicePolicyPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/app/DevicePolicyPrebuilt/DevicePolicyPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DiagnosticsToolPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
 }
 
 android_app_import {
@@ -162,6 +196,28 @@ android_app_import {
 	name: "MarkupGoogle",
 	owner: "gapps",
 	apk: "proprietary/product/app/MarkupGoogle/MarkupGoogle.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MicropaperPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ModuleMetadataGoogle",
+	owner: "gapps",
+	apk: "proprietary/product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,
@@ -251,6 +307,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "SoundAmplifierPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/app/SoundAmplifierPrebuilt/SoundAmplifierPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "SoundPickerPrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk",
@@ -269,6 +336,17 @@ android_app_import {
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Tycho",
+	owner: "gapps",
+	apk: "proprietary/product/app/Tycho/Tycho.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
 	},
 	product_specific: true,
 }
@@ -355,6 +433,42 @@ android_app_import {
 }
 
 android_app_import {
+	name: "CarrierMetrics",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/CarrierMetrics/CarrierMetrics.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CarrierServices",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/CarrierServices/CarrierServices.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CarrierWifi",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/CarrierWifi/CarrierWifi.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
 	name: "ConfigUpdater",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/ConfigUpdater/ConfigUpdater.apk",
@@ -431,6 +545,18 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleRT5514",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514/HotwordEnrollmentXGoogleRT5514.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MaestroPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,
@@ -529,10 +655,47 @@ android_app_import {
 	apk: "proprietary/product/priv-app/RecorderPrebuilt/RecorderPrebuilt.apk",
 	presigned: true,
 	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SafetyHubPrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
 		enabled: true,
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "ScribePrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/ScribePrebuilt/ScribePrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SettingsIntelligenceGooglePrebuilt",
+	owner: "gapps",
+	apk: "proprietary/product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["SettingsIntelligence"],
 }
 
 android_app_import {
@@ -656,6 +819,31 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "RilConfigService",
+	owner: "gapps",
+	apk: "proprietary/system_ext/priv-app/RilConfigService/RilConfigService.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "StorageManagerGoogle",
+	owner: "gapps",
+	apk: "proprietary/system_ext/priv-app/StorageManagerGoogle/StorageManagerGoogle.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	system_ext_specific: true,
+	overrides: ["StorageManager"],
 }
 
 android_app_import {

@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/app/Chrome/Chrome.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/Chrome/Chrome.apk.gz \
     vendor/gapps/common/proprietary/product/app/TrichromeLibrary/TrichromeLibrary.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/TrichromeLibrary/TrichromeLibrary.apk.gz \
     vendor/gapps/common/proprietary/product/app/WebViewGoogle/WebViewGoogle.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/WebViewGoogle/WebViewGoogle.apk.gz \
+    vendor/gapps/common/proprietary/product/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_PRODUCT)/etc/ambient/matcher_tah.leveldb \
     vendor/gapps/common/proprietary/product/etc/default-permissions/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
     vendor/gapps/common/proprietary/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor \
     vendor/gapps/common/proprietary/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model \
@@ -40,8 +41,82 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/etc/sysconfig/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml \
     vendor/gapps/common/proprietary/product/etc/sysconfig/pixel_experience_2020_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020_midyear.xml \
     vendor/gapps/common/proprietary/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml \
+    vendor/gapps/common/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
+    vendor/gapps/common/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
     vendor/gapps/common/proprietary/product/lib64/libgdx.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgdx.so \
     vendor/gapps/common/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsketchology_native.so \
+    vendor/gapps/common/proprietary/product/lib64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libakuaf.so \
+    vendor/gapps/common/proprietary/product/lib64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmotricity.so \
+    vendor/gapps/common/proprietary/product/lib64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libborders_scone_leveldb_jni.so \
+    vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/ko_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/ko_2018030706.zip \
+    vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/mozc.data:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/mozc.data \
+    vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/APP_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/APP_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/APP_NAME.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/CLG.prewalk.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CLG.prewalk.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/CONTACT.transform.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT.transform.mfar \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/CONTACT_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT_NAME.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/CONTACT_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/CONTACT_NAME.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/SONG_NAME.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SONG_NAME.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/SONG_NAME.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SONG_NAME.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.main_model.uint8.data \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.self_normalized_model.uint8.data \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/TERSE_LSTM_LM.lstm_lm.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/am_phonemes.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/am_phonemes.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/c_fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/c_fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/commands.abnf:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/commands.abnf \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/compile_grammar.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/compile_grammar.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/config.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/config.pumpkin \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/contacts.abnf:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/contacts.abnf \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/dict:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dict \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/dictation.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dictation.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/dnn:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/dnn \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/embedded_class_denorm.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/embedded_class_denorm.mfar \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/embedded_normalizer.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/embedded_normalizer.mfar \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_app-actions_prompted-app-name_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_calendar-actions_AddCalendarEvent-Prompted-FieldToChange_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_confirmation_confirmation-cancellation_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_gmm-actions_gmm-nav-actions_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_gmm-actions_gmm-nav-actions_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_media-actions_music-service-controllable_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_media-actions_music-service-controllable_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_monastery_GenericAction-Prompted-ContactName_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_monastery_GenericAction-Prompted-ContactName_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_monastery_contact-disambig-static_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_monastery_contact-disambig-static_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Read_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_read-items_SearchMessageAction-Prompted-Skip_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/en-US_time-actions_time-context_TWIDDLER_FST.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/endpointer_dictation.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_dictation.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/endpointer_model:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_model \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/endpointer_model.mmap:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_model.mmap \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/endpointer_voicesearch.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endpointer_voicesearch.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/ep_portable_mean_stddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/ep_portable_mean_stddev \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/ep_portable_model.uint8.mmap:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/ep_portable_model.uint8.mmap \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/g2p.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p.data \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/g2p_fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p_fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/g2p_graphemes.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p_graphemes.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/g2p_phonemes.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p_phonemes.syms \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/grammar.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/grammar.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/hmm_symbols:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/hmm_symbols \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/hmmlist:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/hmmlist \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/input_mean_std_dev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/input_mean_std_dev \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/lexicon.U.fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/lexicon.U.fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/lstm_model.uint8.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/lstm_model.uint8.data \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/magic_mic.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/magic_mic.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/metadata:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/metadata \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/monastery_config.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/monastery_config.pumpkin \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/norm_fst:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/norm_fst \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/offensive_word_normalizer.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/offensive_word_normalizer.mfar \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/offline_action_data.pb:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/offline_action_data.pb \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/phonelist:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/phonelist \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/portable_lstm:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/portable_lstm \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/portable_meanstddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/portable_meanstddev \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/prons_exception_dictionary_file.txt:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/prons_exception_dictionary_file.txt \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/pumpkin.mmap:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/pumpkin.mmap \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/rescoring.fst.compact:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/rescoring.fst.compact \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/semantics.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/semantics.pumpkin \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/verbalizer_terse.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/verbalizer_terse.mfar \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/voice_actions.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/voice_actions.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/voice_actions_compiler.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/voice_actions_compiler.config \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/word_confidence_classifier:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/word_confidence_classifier \
+    vendor/gapps/common/proprietary/product/usr/srec/en-US/wordlist.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/wordlist.syms \
     vendor/gapps/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_PACKAGES += \
@@ -49,15 +124,20 @@ PRODUCT_PACKAGES += \
     GooglePrintRecommendationService \
     DocumentsUIGoogle \
     GooglePackageInstaller \
+    TagGoogle \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Chrome-Stub \
+    DevicePolicyPrebuilt \
+    DiagnosticsToolPrebuilt \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
     MarkupGoogle \
+    MicropaperPrebuilt \
+    ModuleMetadataGoogle \
     NexusWallpapersStubPrebuilt2020_midyear \
     Ornament \
     Photos \
@@ -65,8 +145,10 @@ PRODUCT_PACKAGES += \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
+    SoundAmplifierPrebuilt \
     SoundPickerPrebuilt \
     TrichromeLibrary-Stub \
+    Tycho \
     WallpapersBReel2020a \
     WebViewGoogle-Stub \
     arcore \
@@ -74,6 +156,9 @@ PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AndroidAutoStubPrebuilt \
     AndroidMigratePrebuilt \
+    CarrierMetrics \
+    CarrierServices \
+    CarrierWifi \
     ConfigUpdater \
     ConnMetrics \
     DevicePersonalizationPrebuiltPixel4 \
@@ -81,6 +166,7 @@ PRODUCT_PACKAGES += \
     GoogleDialer \
     HotwordEnrollmentOKGoogleRT5514 \
     HotwordEnrollmentXGoogleRT5514 \
+    MaestroPrebuilt \
     NovaBugreportWrapper \
     OTAConfigPrebuilt \
     PartnerSetupPrebuilt \
@@ -89,6 +175,9 @@ PRODUCT_PACKAGES += \
     PrebuiltGmsCore \
     AndroidPlatformServices \
     RecorderPrebuilt \
+    SafetyHubPrebuilt \
+    ScribePrebuilt \
+    SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
     TurboPrebuilt \
     Velvet \
@@ -99,5 +188,7 @@ PRODUCT_PACKAGES += \
     GoogleServicesFramework \
     NexusLauncherRelease \
     PixelSetupWizard \
+    RilConfigService \
+    StorageManagerGoogle \
     WallpaperPickerGooglePrebuilt \
     com.google.android.dialer.support
