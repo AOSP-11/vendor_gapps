@@ -21,7 +21,8 @@ LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
 # Include product overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/gapps/overlay/
+    vendor/gapps/overlay \
+    vendor/gapps/overlay-pixel
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
