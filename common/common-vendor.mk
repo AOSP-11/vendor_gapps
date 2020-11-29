@@ -156,9 +156,6 @@ PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AndroidAutoStubPrebuilt \
     AndroidMigratePrebuilt \
-    CarrierMetrics \
-    CarrierServices \
-    CarrierWifi \
     ConfigUpdater \
     ConnMetrics \
     DevicePersonalizationPrebuiltPixel4 \
@@ -188,7 +185,6 @@ PRODUCT_PACKAGES += \
     GoogleServicesFramework \
     NexusLauncherRelease \
     PixelSetupWizard \
-    RilConfigService \
     StorageManagerGoogle \
     WallpaperPickerGooglePrebuilt \
     com.google.android.dialer.support
