@@ -635,6 +635,7 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+	overrides: ["EmergencyInfo"],
 }
 
 android_app_import {
