@@ -21,7 +21,6 @@ LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
 # Include product overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/gapps/overlay \
     vendor/gapps/overlay-pixel
 
 # RRO Overlays
@@ -29,6 +28,7 @@ PRODUCT_PACKAGES += \
     PixelLauncherOverlay
 
 PRODUCT_PACKAGES += \
+    GoogleWebViewOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
@@ -51,11 +51,26 @@ PRODUCT_PACKAGES += \
     IconPackFilledPixelThemePicker \
     IconPackFilledSettings \
     IconPackFilledSystemUI \
+    IconPackKaiAndroid \
+    IconPackKaiLauncher \
+    IconPackKaiSettings \
+    IconPackKaiSystemUI \
+    IconPackKaiThemePicker \
     IconPackRoundedAndroid \
     IconPackRoundedPixelLauncher \
     IconPackRoundedPixelThemePicker \
     IconPackRoundedSettings \
     IconPackRoundedSystemUI \
+    IconPackSamAndroid \
+    IconPackSamLauncher \
+    IconPackSamSettings \
+    IconPackSamSystemUI \
+    IconPackSamThemePicker \
+    IconPackVictorAndroid \
+    IconPackVictorLauncher \
+    IconPackVictorSettings \
+    IconPackVictorSystemUI \
+    IconPackVictorThemePicker \
     IconShapePebble \
     IconShapeRoundedRect \
     IconShapeSquircle \

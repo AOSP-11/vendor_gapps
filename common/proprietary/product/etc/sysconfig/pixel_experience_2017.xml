@@ -8,6 +8,9 @@
     <!-- Allow SCONE JobIntentService & Services to run in background -->
     <allow-in-power-save package="com.google.android.apps.scone" />
 
+    <!-- Allow Flipendo in power save. Will be present on pre-2020 devices for dogfooding. -->
+    <allow-in-power-save-except-idle package="com.google.android.flipendo" />
+
     <!-- Allow Better Bug to take bug report. -->
     <bugreport-whitelisted package="com.google.android.apps.betterbug" />
     <bugreport-whitelisted package="com.google.android.apps.internal.betterbug" />
@@ -50,5 +53,8 @@
         addedInSdk="30" />
     <!-- Allow access to BugreportManager. -->
     <bugreport-whitelisted package="com.google.android.apps.nova.bugreportwrapper" />
+
+    <!-- Feature flag on RVC builds for AER requirements, b/159247801 -->
+    <feature name="com.google.android.feature.AER_OPTIMIZED" />
 
 </config>

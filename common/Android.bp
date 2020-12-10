@@ -260,9 +260,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PixelThemesStub2020_midyear",
+	name: "PixelThemesStub",
 	owner: "gapps",
-	apk: "proprietary/product/app/PixelThemesStub2020_midyear/PixelThemesStub2020_midyear.apk",
+	apk: "proprietary/product/app/PixelThemesStub/PixelThemesStub.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
@@ -494,9 +494,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleRT5514",
+	name: "HotwordEnrollmentOKGoogleRT5514P",
 	owner: "gapps",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRT5514/HotwordEnrollmentOKGoogleRT5514.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRT5514P/HotwordEnrollmentOKGoogleRT5514P.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,
@@ -506,9 +506,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleRT5514",
+	name: "HotwordEnrollmentXGoogleRT5514P",
 	owner: "gapps",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514/HotwordEnrollmentXGoogleRT5514.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRT5514P/HotwordEnrollmentXGoogleRT5514P.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,
@@ -800,9 +800,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WallpaperPickerGooglePrebuilt",
+	name: "WallpaperPickerGoogleRelease",
 	owner: "gapps",
-	apk: "proprietary/system_ext/priv-app/WallpaperPickerGooglePrebuilt/WallpaperPickerGooglePrebuilt.apk",
+	apk: "proprietary/system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,

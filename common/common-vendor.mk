@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsketchology_native.so \
     vendor/gapps/common/proprietary/product/lib64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libakuaf.so \
     vendor/gapps/common/proprietary/product/lib64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmotricity.so \
-    vendor/gapps/common/proprietary/product/lib64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libborders_scone_leveldb_jni.so \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/ko_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/ko_2018030706.zip \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/mozc.data:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/mozc.data \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip \
@@ -141,7 +140,7 @@ PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2020_midyear \
     Ornament \
     Photos \
-    PixelThemesStub2020_midyear \
+    PixelThemesStub \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
@@ -161,8 +160,8 @@ PRODUCT_PACKAGES += \
     DevicePersonalizationPrebuiltPixel4 \
     FilesPrebuilt \
     GoogleDialer \
-    HotwordEnrollmentOKGoogleRT5514 \
-    HotwordEnrollmentXGoogleRT5514 \
+    HotwordEnrollmentOKGoogleRT5514P \
+    HotwordEnrollmentXGoogleRT5514P \
     MaestroPrebuilt \
     NovaBugreportWrapper \
     OTAConfigPrebuilt \
@@ -186,5 +185,5 @@ PRODUCT_PACKAGES += \
     NexusLauncherRelease \
     PixelSetupWizard \
     StorageManagerGoogle \
-    WallpaperPickerGooglePrebuilt \
+    WallpaperPickerGoogleRelease \
     com.google.android.dialer.support

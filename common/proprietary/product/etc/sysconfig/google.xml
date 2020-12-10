@@ -65,7 +65,7 @@
     <app-link package="com.google.android.apps.docs" />
     <app-link package="com.google.android.talk" />
     <app-link package="com.google.android.apps.photos" />
-    <app-link package="com.google.android.music" />
+    <app-link package="com.google.android.apps.youtube.music" />
 
     <!-- Apps below are optional on GMS devices -->
     <app-link package="com.google.android.apps.tycho" />
@@ -76,6 +76,7 @@
     <app-link package="com.google.android.talk" />
     <app-link package="com.google.android.videos" />
     <app-link package="com.google.android.calendar" />
+    <app-link package="com.google.android.apps.wallpaper" />
 
     <!-- These are the packages that are white-listed to be able to run as system user -->
     <system-user-whitelisted-app package="com.android.vending" />

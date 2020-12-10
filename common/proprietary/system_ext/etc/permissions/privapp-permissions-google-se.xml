@@ -23,7 +23,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
 <permissions>
 
     <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
         <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.LOCATION_HARDWARE"/>
@@ -36,7 +35,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
         <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.LOCATION_HARDWARE"/>
@@ -137,7 +135,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.google.android.cbrsnetworkmonitor">
+    <privapp-permissions package="com.google.android.apps.cbrsnetworkmonitor">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
@@ -197,6 +195,11 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.uvexposurereporter">
+        <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.iphealthmonitor">
         <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     </privapp-permissions>

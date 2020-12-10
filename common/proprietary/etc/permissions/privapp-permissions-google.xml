@@ -39,6 +39,10 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
         <permission name="android.permission.PACKAGE_USAGE_STATS" />
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+
+        <!-- for permission 2 hub debugging only -->
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.packageinstaller">
@@ -75,15 +79,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.documentsui">
-        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-        <permission name="android.permission.MODIFY_QUIET_MODE"/>
-        <!-- Permissions required for reading and logging compat changes -->
-        <permission name="android.permission.LOG_COMPAT_CHANGE"/>
-        <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
-    </privapp-permissions>
-
-    <privapp-permissions package="com.android.documentsui">
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MODIFY_QUIET_MODE"/>
