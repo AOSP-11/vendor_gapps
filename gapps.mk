@@ -19,28 +19,32 @@ PRODUCT_COPY_FILES += \
 
 LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
-# Include product overlays
-PRODUCT_PACKAGE_OVERLAYS += \
+# Include Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/gapps/overlay \
     vendor/gapps/overlay-pixel
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/gapps/overlay/common \
+    vendor/gapps/overlay-pixel/common
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    PixelLauncherOverlay
-
-PRODUCT_PACKAGES += \
-    GoogleWebViewOverlay \
-    PixelConfigOverlay2018 \
-    PixelConfigOverlay2019 \
-    PixelConfigOverlay2019Midyear \
-    PixelDocumentsUIGoogleOverlay \
-    PixelSetupWizardOverlay \
-    PixelSetupWizardOverlay2019
-
-PRODUCT_PACKAGES += \
     FilesOverlay \
-    FontArbutusSource \
-    FontArvoLato \
-    FontRubikRubik \
+    FontArbutusSourceOverlay \
+    FontArvoLatoOverlay \
+    FontKaiOverlay \
+    FontRubikRubikOverlay \
+    FontSamOverlay \
+    FontVictorOverlay \
+    GooglePermissionControllerOverlay \
+    GoogleWebViewOverlay \
+    PixelConfigOverlay2019 \
+    PixelDocumentsUIGoogleOverlay \
+    PixelSetupWizardAodOverlay
+
+# IconPack Overlays
+PRODUCT_PACKAGES += \
     IconPackCircularAndroid \
     IconPackCircularPixelLauncher \
     IconPackCircularPixelThemePicker \
@@ -114,6 +118,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 
+ifeq ($(TARGET_FLATTEN_APEX),false)
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/gapps/apex
@@ -124,7 +129,6 @@ PRODUCT_PACKAGES += \
 # Google Apexes
 PRODUCT_PACKAGES += \
     com.google.android.adbd \
-    com.google.android.cellbroadcast \
     com.google.android.conscrypt \
     com.google.android.extservices \
     com.google.android.ipsec \
@@ -138,5 +142,6 @@ PRODUCT_PACKAGES += \
     com.google.android.sdkext \
     com.google.android.telephony \
     com.google.android.tzdata2
+endif
 
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)

@@ -809,7 +809,7 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
-	overrides: ["ThemePicker", "ThemesStub", "BlackAccent", "BlackTheme", "BlueAccent", "BrownAccent", "CyanAccent", "DarkTheme", "GreenAccent", "OrangeAccent", "PinkAccent", "PurpleAccent", "RedAccent", "YellowAccent"],
+	overrides: ["ThemePicker", "ThemesStub", "BlackAccent", "BlackTheme", "BlueAccent", "BrownAccent", "CyanAccent", "DarkTheme", "GreenAccent", "OrangeAccent", "PinkAccent", "PurpleAccent", "RedAccent", "YellowAccent", "NavigationBarNoHint"],
 }
 
 dex_import {
