@@ -30,6 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    CellBroadcastServiceOverlay \
     FilesOverlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
@@ -41,6 +42,7 @@ PRODUCT_PACKAGES += \
     GoogleWebViewOverlay \
     PixelConfigOverlay2019 \
     PixelDocumentsUIGoogleOverlay \
+    PixelLiveWallpapersOverlay \
     PixelSetupWizardAodOverlay
 
 # IconPack Overlays
@@ -129,6 +131,7 @@ PRODUCT_PACKAGES += \
 # Google Apexes
 PRODUCT_PACKAGES += \
     com.google.android.adbd \
+    com.google.android.cellbroadcast \
     com.google.android.conscrypt \
     com.google.android.extservices \
     com.google.android.ipsec \
