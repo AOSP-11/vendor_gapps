@@ -14,8 +14,10 @@
 # limitations under the License.
 #
 
+ifeq ($(wildcard vendor/gapps/common/proprietary/product/priv-app/Velvet/Velvet.apk),)
 PRODUCT_COPY_FILES += \
     $(shell tar -zxf vendor/gapps/common/proprietary/product/priv-app/Velvet/Velvet.apk.tar.gz -C vendor/gapps/common/proprietary/product/priv-app/Velvet/)
+endif
 
 LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
