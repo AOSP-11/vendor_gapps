@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
     IconShapeTeardrop \
     IconShapeVessel
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    vendor/gapps/product/etc/permissions/privapp-permissions-pixel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-pixel.xml
-
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
