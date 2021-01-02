@@ -223,6 +223,7 @@ android_app_import {
 		enabled: true,
 	},
 	product_specific: true,
+    overrides: ["ModuleMetadata"],
 }
 
 android_app_import {
