@@ -138,7 +138,6 @@ PRODUCT_PACKAGES += \
     LocationHistoryPrebuilt \
     MarkupGoogle \
     MicropaperPrebuilt \
-    ModuleMetadataGoogle \
     NexusWallpapersStubPrebuilt2020_midyear \
     Ornament \
     Photos \

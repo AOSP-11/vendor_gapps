@@ -124,7 +124,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/gapps/apex
 
 PRODUCT_PACKAGES += \
-    ApexOverlay
+    ApexOverlay \
+    ModuleMetadataGoogle
 
 # Google Apexes
 PRODUCT_PACKAGES += \
