@@ -128,7 +128,7 @@ android_app_import {
 	name: "DiagnosticsToolPrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk",
-	certificate: "platform",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
