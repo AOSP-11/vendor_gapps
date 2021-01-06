@@ -26,10 +26,25 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/etc/default-permissions/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
     vendor/gapps/common/proprietary/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor \
     vendor/gapps/common/proprietary/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.sdm.plugins.dcmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.dcmo.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.sdm.plugins.sprintdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.android.sdm.plugins.usccdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.usccdm.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.customermobile.preload.vzw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.customermobile.preload.vzw.xml \
     vendor/gapps/common/proprietary/product/etc/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.google.omadm.trigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.omadm.trigger.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.verizon.apn.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.apn.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.services.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/features-verizon.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/obdm_permissions.xml \
     vendor/gapps/common/proprietary/product/etc/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
     vendor/gapps/common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
+    vendor/gapps/common/proprietary/product/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vzw_mvs_permissions.xml \
     vendor/gapps/common/proprietary/product/etc/preferred-apps/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/preferred-apps/google.xml \
+    vendor/gapps/common/proprietary/product/etc/sysconfig/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml \
+    vendor/gapps/common/proprietary/product/etc/sysconfig/allowlist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.android.omadm.service.xml \
     vendor/gapps/common/proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/gapps/common/proprietary/product/etc/sysconfig/google-rollback-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-rollback-package-whitelist.xml \
     vendor/gapps/common/proprietary/product/etc/sysconfig/google-staged-installer-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-staged-installer-whitelist.xml \
@@ -47,8 +62,8 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
     vendor/gapps/common/proprietary/product/lib64/libgdx.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libgdx.so \
     vendor/gapps/common/proprietary/product/lib64/libsketchology_native.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsketchology_native.so \
-    vendor/gapps/common/proprietary/product/lib64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libakuaf.so \
-    vendor/gapps/common/proprietary/product/lib64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libmotricity.so \
+    vendor/gapps/common/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
+    vendor/gapps/common/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/ko_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/ko_2018030706.zip \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/mozc.data:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/mozc.data \
     vendor/gapps/common/proprietary/product/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip \
@@ -118,6 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/common/proprietary/product/usr/srec/en-US/voice_actions_compiler.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/voice_actions_compiler.config \
     vendor/gapps/common/proprietary/product/usr/srec/en-US/word_confidence_classifier:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/word_confidence_classifier \
     vendor/gapps/common/proprietary/product/usr/srec/en-US/wordlist.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/wordlist.syms \
+    vendor/gapps/common/proprietary/system_ext/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.verizon.llkagent.xml \
     vendor/gapps/common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_PACKAGES += \
@@ -139,16 +155,18 @@ PRODUCT_PACKAGES += \
     MarkupGoogle \
     MicropaperPrebuilt \
     NexusWallpapersStubPrebuilt2020_midyear \
-    Ornament \
     Photos \
     PixelThemesStub \
+    PlayAutoInstallConfig \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
+    PrebuiltGoogleTelemetryTvp \
     SoundAmplifierPrebuilt \
     SoundPickerPrebuilt \
     TrichromeLibrary-Stub \
     Tycho \
+    VZWAPNLib \
     WallpapersBReel2020a \
     WebViewGoogle-Stub \
     arcore \
@@ -156,19 +174,26 @@ PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AndroidAutoStubPrebuilt \
     AndroidMigratePrebuilt \
+    AppDirectedSMSService \
     CarrierLocation \
     CarrierMetrics \
     CarrierServices \
     CarrierWifi \
     ConfigUpdater \
+    ConnMO \
     ConnMetrics \
+    DCMO \
+    DMService \
     DevicePersonalizationPrebuiltPixel4 \
     FilesPrebuilt \
+    GCS \
     GoogleDialer \
     HotwordEnrollmentOKGoogleRT5514P \
     HotwordEnrollmentXGoogleRT5514P \
     MaestroPrebuilt \
+    MyVerizonServices \
     NovaBugreportWrapper \
+    OBDM_Permissions \
     PartnerSetupPrebuilt \
     Phonesky \
     PixelLiveWallpaperPrebuilt \
@@ -177,14 +202,21 @@ PRODUCT_PACKAGES += \
     ScribePrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
+    Showcase \
+    SprintDM \
+    SprintHM \
+    TetheringEntitlement \
     TurboPrebuilt \
+    USCCDM \
     Velvet \
     WellbeingPrebuilt \
+    obdm_stub \
     Flipendo \
     CarrierSetup \
     GoogleFeedback \
     GoogleOneTimeInitializer \
     GoogleServicesFramework \
+    LLKAgent \
     NexusLauncherRelease \
     PixelSetupWizard \
     RilConfigService \
