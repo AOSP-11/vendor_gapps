@@ -579,18 +579,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "OTAConfigPrebuilt",
-	owner: "gapps",
-	apk: "proprietary/product/priv-app/OTAConfigPrebuilt/OTAConfigPrebuilt.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: true,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "PartnerSetupPrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk",
@@ -618,30 +606,6 @@ android_app_import {
 	name: "PixelLiveWallpaperPrebuilt",
 	owner: "gapps",
 	apk: "proprietary/product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: true,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "PrebuiltGmsCore",
-	owner: "gapps",
-	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: true,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "AndroidPlatformServices",
-	owner: "gapps",
-	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: true,

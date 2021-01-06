@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2019-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -85,6 +85,18 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRect \
     IconShapeTeardrop \
     IconShapeVessel
+
+# PrebuiltGmsCore
+PRODUCT_PACKAGES += \
+    AndroidPlatformServices \
+    PrebuiltGmsCoreRvc \
+    PrebuiltGmsCoreRvc_AdsDynamite \
+    PrebuiltGmsCoreRvc_DynamiteLoader \
+    PrebuiltGmsCoreRvc_DynamiteModulesA \
+    PrebuiltGmsCoreRvc_DynamiteModulesC \
+    PrebuiltGmsCoreRvc_GoogleCertificates \
+    PrebuiltGmsCoreRvc_MapsDynamite \
+    PrebuiltGmsCoreRvc_MeasurementDynamite
 
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \

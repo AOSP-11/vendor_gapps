@@ -169,12 +169,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleRT5514P \
     MaestroPrebuilt \
     NovaBugreportWrapper \
-    OTAConfigPrebuilt \
     PartnerSetupPrebuilt \
     Phonesky \
     PixelLiveWallpaperPrebuilt \
-    PrebuiltGmsCore \
-    AndroidPlatformServices \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     ScribePrebuilt \
