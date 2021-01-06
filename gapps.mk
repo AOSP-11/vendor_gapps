@@ -23,6 +23,7 @@ LOCAL_DEVICE := $(lastword $(subst _, ,$(TARGET_PRODUCT)))
 
 # Include Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/gapps/apex/overlay \
     vendor/gapps/overlay \
     vendor/gapps/overlay-pixel
 
@@ -132,11 +133,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 ifeq ($(TARGET_FLATTEN_APEX),false)
 # Enable Google Play system updates support
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/gapps/apex/overlay/enable-apex
+
 PRODUCT_SOONG_NAMESPACES += \
     vendor/gapps/apex
 
 PRODUCT_PACKAGES += \
-    ApexOverlay \
     ModuleMetadataGoogle
 
 # Google Apexes
@@ -156,6 +159,10 @@ PRODUCT_PACKAGES += \
     com.google.android.sdkext \
     com.google.android.telephony \
     com.google.android.tzdata2
+else
+# Hide "Google Play System Updates" if Apex disabled
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/gapps/apex/overlay/disable-apex
 endif
 
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)
