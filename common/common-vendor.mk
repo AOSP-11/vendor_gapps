@@ -139,6 +139,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleExtShared \
     GooglePrintRecommendationService \
+    DocumentsUIGoogle \
     GooglePackageInstaller \
     TagGoogle \
     CalculatorGooglePrebuilt \
@@ -184,6 +185,7 @@ PRODUCT_PACKAGES += \
     DCMO \
     DMService \
     DevicePersonalizationPrebuiltPixel4 \
+    FilesPrebuilt \
     GCS \
     GoogleDialer \
     HotwordEnrollmentOKGoogleRT5514P \

@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     PixelConfigOverlay2019 \
+    PixelDocumentsUIGoogleOverlay \
     PixelLiveWallpapersOverlay \
     PixelSetupWizardAodOverlay
 
@@ -129,14 +130,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.clientidbase=android-google \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
-
-# DocumentsUIGoogle & FilesPrebuilt
-ifeq ($(TARGET_GOOGLE_DOCUMENTSUI), true)
-PRODUCT_PACKAGES += \
-    DocumentsUIGoogle \
-    FilesPrebuilt \
-    PixelDocumentsUIGoogleOverlay
-endif
 
 ifeq ($(TARGET_FLATTEN_APEX),false)
 # Enable Google Play system updates support
