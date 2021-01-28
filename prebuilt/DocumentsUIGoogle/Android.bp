@@ -1,0 +1,11 @@
+android_app_import {
+	name: "DocumentsUIGoogle",
+	owner: "gapps",
+	apk: "DocumentsUIGoogle.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+	overrides: ["DocumentsUI"],
+}
