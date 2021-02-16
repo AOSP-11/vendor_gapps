@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
+    Maps \
     MarkupGoogle \
     MicropaperPrebuilt \
     NexusWallpapersStubPrebuilt2020_midyear \
