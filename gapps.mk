@@ -49,6 +49,12 @@ PRODUCT_PACKAGES += \
 
 # IconPack Overlays
 PRODUCT_PACKAGES += \
+    FontArbutusSource \
+    FontArvoLato \
+    FontKai \
+    FontRubikRubik \
+    FontSam \
+    FontVictor \
     IconPackCircularAndroid \
     IconPackCircularPixelLauncher \
     IconPackCircularPixelThemePicker \
