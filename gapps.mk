@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
 
 # IconPack Overlays
 PRODUCT_PACKAGES += \
+    AccentColorBlack \
     FontArbutusSource \
     FontArvoLato \
     FontKai \
