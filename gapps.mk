@@ -34,6 +34,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     FilesOverlay \
+    FontArbutusSourceOverlay \
+    FontArvoLatoOverlay \
+    FontKaiOverlay \
+    FontRubikRubikOverlay \
+    FontSamOverlay \
+    FontVictorOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     PixelConfigOverlay2019 \
@@ -44,12 +50,6 @@ PRODUCT_PACKAGES += \
 # IconPack Overlays
 PRODUCT_PACKAGES += \
     AccentColorBlack \
-    FontArbutusSource \
-    FontArvoLato \
-    FontKai \
-    FontRubikRubik \
-    FontSam \
-    FontVictor \
     IconPackCircularAndroid \
     IconPackCircularPixelLauncher \
     IconPackCircularPixelThemePicker \
