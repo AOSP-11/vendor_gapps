@@ -34,12 +34,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     FilesOverlay \
-    FontArbutusSourceOverlay \
-    FontArvoLatoOverlay \
-    FontKaiOverlay \
-    FontRubikRubikOverlay \
-    FontSamOverlay \
-    FontVictorOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     PixelConfigOverlay2019 \
